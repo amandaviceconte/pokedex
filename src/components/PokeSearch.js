@@ -13,7 +13,7 @@ class PokeSearch extends Component {
           placeholder="Pokemon Name"
           onChange={e => {
               this.props.handleChange(e.target.value);
-              this.props.sucesso();
+              // this.props.sucesso();
             }
           }
         />

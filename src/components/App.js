@@ -21,9 +21,9 @@ class App extends Component {
     });
   }
 
-  sucesso = () => {
-    alert('papai');
-  }
+  // sucesso = () => {
+  //   alert('testing');
+  // }
 
   // submit não recebe nada
   handleSubmit(ev) {
@@ -42,7 +42,8 @@ class App extends Component {
   render() {
     return (
       <div onSubmit={this.handleSubmit} className="App">
-        <PokeSearch handleChange={this.handleChange} sucesso={this.sucesso} />
+        {/* <PokeSearch handleChange={this.handleChange} sucesso={this.sucesso} /> */}
+        <PokeSearch handleChange={this.handleChange} />
         <DetailView pokemon={this.state.pokemon} />
       </div>
     );
